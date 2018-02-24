@@ -1,0 +1,435 @@
+html {
+  font-family: sans-serif;
+  font-size: 16px;
+  background-color: white;
+}
+
+body {
+
+}
+
+.container {
+  margin: auto;
+
+}
+
+.top{
+border-left: 1px solid black;
+border-bottom: 1px solid black;
+border-right: 1px solid black;
+}
+
+.mobile{
+  display: none;
+}
+
+header {
+ height: 64px;
+ align-items: center;
+ justify-content: space-between;
+}
+
+header .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 560px) {
+ header .desktop {
+   display: none;
+ }
+
+ header .mobile {
+   display: block;
+   justify-content: center;
+   height: 4rem;
+   margin: 0 auto;
+
+ }
+
+ .banner-section{
+   flex-direction: column;
+ }
+
+ .image-content {
+    flex-direction: column;
+ }
+
+}
+
+.flex {
+display: flex;
+}
+
+
+.bold, .light  {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.light{
+  color: grey;
+}
+header img {
+  margin-left: 24px;
+  height: 100%;
+}
+
+.logo {
+height: 4rem;
+align-items: center;
+}
+
+.login {
+  align-items: center;
+  margin-right: 24px;
+  font-size: 1.5rem;
+  }
+
+.box{
+  background-color: rgb(179, 255, 255);
+  width: 16px;
+  height: 4rem;
+}
+
+.banner-section {
+  display: flex;
+  flex: 1;
+  padding: 2rem 1.5rem;
+ background-color: #cccccc;
+}
+
+.image-container {
+  width: 100%;
+}
+
+.image-feature {
+  width: 60%;
+  }
+
+  @media only screen and (max-width: 560px) {
+
+    .desktop {
+      display: none;
+    }
+
+    .mobile{
+      display: block;
+      }
+
+    .banner-section {
+      padding: 0;
+        }
+
+    .image-feature {
+      width: 100%;
+      margin-bottom: 2rem;
+      }
+
+      .stories .first {
+        display: none;
+      }
+    }
+
+.image-container img{
+    width: 100%;
+    height: auto;
+}
+
+.center {
+  padding-left: 2rem;
+}
+
+.center h1 {
+  font-size: 5rem;
+  padding-bottom: 2rem;
+}
+
+.center h4{
+  font-size: 3rem;
+  padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+  @media only screen and (max-width: 560px) {
+    .center h1 {
+      font-size: 3rem;
+      padding-bottom: 2rem;
+    }
+
+    .center {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .center h4{
+      font-size: 2rem;
+    }
+  }
+
+
+
+.start{
+  display: flex;
+  height: 2rem;
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-right: 2rem;
+  padding: 1rem;
+}
+
+  @media only screen and (max-width: 560px) {
+    .start {
+      margin-bottom: 2rem;
+    margin-left: 0rem;
+      margin-right: 3rem;
+      background-color: grey;
+      }
+  }
+
+.start a{
+  color: white;
+}
+
+.text-feature{
+  display: flex;
+  width: 40%;
+  margin-left: 1.5rem;
+  align-items: center;
+}
+  @media only screen and (max-width: 560px) {
+    .text-feature{
+      width: 100%;
+      }
+  }
+
+.feature {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.stories .second {
+  border-left: 1px solid grey;
+}
+
+.second .image-container {
+  margin-left: 1rem;
+
+}
+  @media only screen and (max-width: 560px) {
+
+    .second .image-container img{
+      flex-grow: 1;
+
+    }
+    .column .image-content .content  {
+      padding-left: 2rem;
+    }
+  }
+
+.first {
+  width: 60%;
+}
+
+.first .image-content {
+  margin: 0 1.5rem;
+}
+
+
+.content h2 {
+    font-size: 4rem;
+    color: grey;
+    margin-top:2rem;
+    margin-bottom: 2rem;
+}
+
+.content h5 {
+    font-size: 1rem;
+    color: grey;
+    margin-bottom: 1rem;
+}
+
+.content h1{
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.content a{
+  font-size: 2rem;
+ color: #3399ff;
+}
+
+.second {
+  display: flex;
+  width: 40%;
+}
+
+
+
+.second .image-content {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.second .image-content .image-container {
+  width: 35%;
+}
+
+
+
+.second .image-content:first-child {
+  border-bottom: 3px double grey;
+}
+
+.second .image-content:nth-child(3) {
+  background-color: #e6e6e6;
+}
+
+.second .image-content .content {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  text-align: left;
+  margin-left: 1rem;
+  justify-content: center;
+
+}
+
+@media only screen and (max-width: 560px) {
+  .second{
+    width: 100%;
+  }
+
+  .second .image-content .image-container {
+    width: 100%;
+
+    }
+
+    .second .image-content .image-container .mobile img {
+      width: 100%;
+      }
+
+ .second .image-content .content {
+   width: 100%;
+ }
+
+ .second .image-content:first-child {
+   border-bottom: 0;
+ }
+
+}
+
+.lesson {
+  width = 100%;
+}
+
+.lesson h2 {
+  margin: 2rem;
+  text-align: center;
+}
+
+.learning h1{
+  margin-top:1rem;
+  margin-bottom:1rem;
+font-size: 2rem;
+}
+
+.learning{
+  flex-wrap: wrap;
+  margin-left:5rem;
+  margin-bottom: 2rem;
+}
+
+.learning .image-content {
+  margin: 1rem;
+  width: 30%;
+}
+
+.learning .content{
+  margin-left: 1rem;
+}
+@media only screen and (max-width: 560px) {
+  .learning{
+    flex-direction: column;
+  }
+
+  .learning .image-content {
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: grey;
+  margin: 1rem 0;
+  }
+}
+
+.course{
+  margin-top:0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.thesis {
+  width = 100%;
+  text-align: center;
+}
+
+.white-papers second {
+  margin-left:1rem;
+}
+
+.white-papers .image-content:first-child {
+    background-color: #e6e6e6;
+    margin-bottom:
+}
+
+.white-papers {
+  margin-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.white-papers .image-content {
+
+}
+
+.white-papers .image-content .image-container {
+  margin: 1rem;
+}
+
+.video-content{
+  width: 100%;
+}
+
+.content p{
+  font-size: 2rem;
+}
+@media only screen and (max-width: 560px) {
+  .white-papers .desktop{
+    display: none;
+  }
+}
+
+footer {
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  border-top: 1px solid grey;
+}
+
+footer .content {
+  display: flex;
+  justify-content: space-between;
+    margin-top: 2rem;
+      margin-bottom: 2rem;
+}
+
+footer .content .terms {
+  justify-content: space-around;
+  margin-right: 2rem;
+}
